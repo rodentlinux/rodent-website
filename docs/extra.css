@@ -1,0 +1,29 @@
+body {
+	background-image: url("/rodent-transparent.svg");
+	background-repeat: no-repeat;
+	background-size: 200% 200%;
+	background-position: 15% 30%;
+}
+
+a.navbar-brand {
+	margin-left: 40px !important;
+}
+
+a.navbar-brand::before {
+	content: "";
+	background-image: url("/rodent.svg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	left: -30px;
+	top: -7px;
+	display: inline-block;
+	margin: -20px;
+	padding: 20px;
+}
+
+ul.navbar-right li:nth-of-type(n+2):nth-of-type(-n+3) {
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}

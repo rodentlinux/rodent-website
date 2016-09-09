@@ -1,0 +1,32 @@
+site_name: Rodent Linux
+site_description: Rodent Linux - a root file system generator
+site_author: Rodent Linux Project
+site_url: https://rodentlinux.org/
+
+repo_name: GitHub
+repo_url: https://github.com/esmil/rodent/
+
+copyright: <a href="http://creativecommons.org/licenses/by-sa/4.0/">Copyright &copy;</a> Rodent Linux Project
+
+pages:
+- Home: index.md
+- Getting started:
+  - Build your first image: first-image.md
+  - Build your first package: first-package.md
+  - Command reference: command-reference.md
+- Contributing:
+  - Packages: contribute-packages.md
+  - Architectures: contribute-archs.md
+  - Documentation: contribute-docs.md
+- About: about.md
+
+theme: spacelab
+extra_css: [extra.css]
+extra:
+  author:
+    github: rodentlinux
+    twitter: rodentlinux
+  logo: logo.svg
+  palette:
+    primary: indigo
+    accent: indigo
