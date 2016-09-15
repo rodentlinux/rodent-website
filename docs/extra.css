@@ -28,3 +28,8 @@ ul.navbar-right li:nth-of-type(n+2):nth-of-type(-n+3) {
 	width: 0;
 	height: 0;
 }
+
+code {
+	color: #555;
+	background: none;
+}
