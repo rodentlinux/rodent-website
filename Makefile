@@ -1,4 +1,5 @@
 build:
+	bash update-packages.sh
 	mkdocs build
 
 publish:

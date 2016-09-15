@@ -14,6 +14,7 @@ pages:
   - Build your first image: first-image.md
   - Build your first package: first-package.md
   - Command reference: command-reference.md
+- Packages: packages.md
 - Contributing:
   - Packages: contribute-packages.md
   - Architectures: contribute-archs.md
