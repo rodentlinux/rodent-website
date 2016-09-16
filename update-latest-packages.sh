@@ -30,7 +30,7 @@ repo_url='https://rodentlinux.org/rodent/repo.armv7hl.xz'
 			fi
 
 			if [ "$recipe" = "$updated" ]; then
-				echo "[$package](/packages/#$package)"
+				echo "• [$package](/packages/#$package)"
 			fi
 		done
 	done
