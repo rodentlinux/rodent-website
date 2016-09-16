@@ -10,6 +10,7 @@ publish:
 		--verbose \
 		--delete-after \
 		--exclude /__init__.* \
+		--exclude /rodent \
 		site/ \
 		rodentlinux.org:/www/
 
