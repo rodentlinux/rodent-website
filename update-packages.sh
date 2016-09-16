@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Update docs/packages.md with list of packages from repo.
 
-repo_url='http://esmil.dk/rodent/repo.armv7hl.xz'
+repo_url='https://rodentlinux.org/rodent/repo.armv7hl.xz'
 
 {
 	echo '# Packages'
