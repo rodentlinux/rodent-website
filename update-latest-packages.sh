@@ -23,13 +23,13 @@ repo_url='https://rodentlinux.org/rodent/repo.armv7hl.xz'
 			version=${recipe_version##*=}
 			package=${candidate%%=*}
 
-			if [ -n "$first" ]; then
-				echo
-				echo "Recipe **$updated** was updated to version $version, releasing packages:<br>"
-				first=''
-			fi
-
 			if [ "$recipe" = "$updated" ]; then
+				if [ -n "$first" ]; then
+					echo
+					echo "Recipe **$updated** was updated to version $version, releasing packages:<br>"
+					first=''
+				fi
+
 				echo "• [$package](/packages/#$package)"
 			fi
 		done
