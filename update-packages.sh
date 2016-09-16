@@ -7,13 +7,14 @@ repo_url='http://esmil.dk/rodent/repo.armv7hl.xz'
 	echo '# Packages'
 	last_section=''
 
-	curl -s "$repo_url" |xz -dc |while read -r line; do
-		candidate=$(echo "$line" |cut -f1)
-		#recipe=$(echo "$line" |cut -f2)
-		makedepends=$(echo "$line" |cut -f3)
-		depends=$(echo "$line" |cut -f4)
-		#sha=$(echo "$line" |cut -f5)
-		description=$(echo "$line" |cut -f6)
+	curl -s "$repo_url" |xz -dc |tr '\t' '\n' |while read -r candidate; do
+		# shellcheck disable=SC2034
+		read -r recipe
+		read -r makedepends
+		read -r depends
+		# shellcheck disable=SC2034
+		read -r sha
+		read -r description
 		package=${candidate%%=*}
 		version=${candidate##*=}
 
