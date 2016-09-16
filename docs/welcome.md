@@ -20,8 +20,3 @@ image.
 Rodent Linux features a simple, intuitive package system for you to build and
 distribute your own packages, no matter if it's your application or just the
 toolchain you need.
-
-## Latest news
-
-## Latest packages
-

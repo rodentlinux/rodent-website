@@ -1,5 +1,7 @@
 build:
 	bash update-packages.sh
+	bash update-latest-packages.sh
+	bash compile-index.sh
 	mkdocs build
 
 publish:
